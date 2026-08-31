@@ -1,0 +1,17 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Espace professionnel | Tauveron Sud</title><link rel="stylesheet" href="/styles.css"></head><body class="pro-shell">
+<div class="pro-card">
+  <div class="pro-head"><a class="brand" href="/"><span class="brand-mark"></span><span><strong>TAUVERON</strong><small>SUD · PRO</small></span></a><a class="btn ghost" href="/">Retour au site</a></div>
+  <div class="pro-body">
+    <section id="login-view" class="login-wrap">
+      <span class="eyebrow">Accès réservé</span><h1>Espace professionnel</h1><p>Entrez votre code d’accès pour ouvrir le tableau de bord Tauveron Sud.</p>
+      <form id="login-form" class="form" autocomplete="off"><label for="access-code"><strong>Code d’accès</strong></label><input id="access-code" name="code" type="password" inputmode="text" autocomplete="current-password" required placeholder="Votre code"><button class="btn primary" type="submit">Se connecter</button><p id="login-error" class="form-error" role="alert" aria-live="polite"></p></form>
+    </section>
+    <section id="dashboard" class="dashboard" aria-hidden="true">
+      <div class="dashboard-title"><div><span class="eyebrow">Pilotage commercial</span><h1>Tableau de bord</h1><p>Suivez les demandes, rappels et devis depuis cet appareil.</p></div><div class="dashboard-actions"><button id="export-btn" class="btn light" type="button">Exporter CSV</button><button id="logout-btn" class="btn dark" type="button">Déconnexion</button></div></div>
+      <div class="stats"><article class="stat"><span>Prospects</span><strong id="stat-total">0</strong></article><article class="stat"><span>À rappeler</span><strong id="stat-call">0</strong></article><article class="stat"><span>Devis</span><strong id="stat-quote">0</strong></article><article class="stat"><span>Gagnés</span><strong id="stat-won">0</strong></article></div>
+      <div class="crm"><aside class="crm-panel"><h2>Nouveau prospect</h2><form id="lead-form" class="form"><input name="name" required placeholder="Nom / société"><input name="phone" placeholder="Téléphone"><input name="email" type="email" placeholder="E-mail"><select name="project"><option>Photovoltaïque</option><option>Électricité</option><option>Maintenance</option><option>Dépannage</option><option>Autre</option></select><select name="status"><option value="nouveau">Nouveau</option><option value="rappel">À rappeler</option><option value="devis">Devis</option><option value="gagne">Gagné</option><option value="perdu">Perdu</option></select><textarea name="note" placeholder="Notes"></textarea><button class="btn primary" type="submit">Ajouter le prospect</button></form><p class="storage-note">Les données de ce mini-CRM sont enregistrées sur cet appareil.</p></aside>
+      <section class="crm-panel"><div class="lead-toolbar"><div><span class="eyebrow">Pipeline</span><h2>Prospects</h2></div><select id="filter-status"><option value="all">Tous les statuts</option><option value="nouveau">Nouveaux</option><option value="rappel">À rappeler</option><option value="devis">Devis</option><option value="gagne">Gagnés</option><option value="perdu">Perdus</option></select></div><div id="lead-list" class="lead-list"></div><div id="empty-leads" class="empty-state">Aucun prospect pour le moment.</div></section></div>
+    </section>
+  </div>
+</div>
+<script src="/pro.js"></script></body></html>
