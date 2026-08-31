@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/pro", "destination": "/pro.html" },
+    { "source": "/histoire", "destination": "/histoire.html" },
+    { "source": "/secteur", "destination": "/secteur.html" },
+    { "source": "/realisations", "destination": "/realisations.html" },
+    { "source": "/actualites", "destination": "/actualites.html" },
+    { "source": "/contact", "destination": "/contact.html" }
+  ],
+  "headers": [
+    { "source": "/api/(.*)", "headers": [{ "key": "Cache-Control", "value": "no-store" }] },
+    { "source": "/pro(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
+  ]
+}
